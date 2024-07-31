@@ -12,6 +12,7 @@ openapi_key = st.secrets["OPENAI_API_KEY"]
 # Set streamlit page configuration
 st.set_page_config(page_title="Hope to Skill ChatBot")
 st.title("AI Mentor")
+openai_api_key = st.text_input("OpenAI API Key", key=openapi_key , type="password")
 
 # Initialize session state variables
 if 'generated' not in st.session_state:
