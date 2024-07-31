@@ -10,7 +10,7 @@ from langchain.schema import (
 openapi_key = st.secrets["OPENAI_API_KEY"]
 
 # Set streamlit page configuration
-st.set_page_config(page_title="Hope to Skill ChatBot")
+st.set_page_config(page_title="OpenAI ChatBot")
 st.title("AI Mentor")
 openai_api_key = st.text_input("OpenAI API Key", key=openapi_key , type="password")
 
